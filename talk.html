@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>The Future of SunPy Governance</title>
+<meta name="author" content="Stuart Mumford"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./src/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="./src/reveal.js/dist/theme/simple.css" id="theme"/>
+
+<link rel="stylesheet" href="org.css"/>
+<link rel="stylesheet" href="./src/reveal.js/plugin/highlight/monokai.css"/>
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './src/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide" data-background="./images/background_1.jpg"><h3>The Future of SunPy Governance</h3>
+<h4>Stuart Mumford</h4>
+<a href="https://aperio.software"><img style='float: left; width: 30%; margin-top: 100px; height: 25%;' src='images/aperio.svg'/></a><a href="https://sunpy.org"><img style='float: right; width: 30%; margin-top: 100px; height: 25%; margin-right: 5%;' src='images/sunpy.svg'/></a>
+</section>
+
+<section>
+<section id="slide-orged8b7b8" data-background="./images/background_1.jpg">
+<h2 id="orged8b7b8">The Current Governance Structure</h2>
+<p>
+SunPy's current governance was codified in 2014, it was written pre-numfocus and with the idea that SunPy might have to become it's own legal entity at somepoint in the future.
+</p>
+
+<p>
+The governance of the project is split into two parts:
+</p>
+
+<ol>
+<li><p>
+The SunPy board
+</p>
+
+<blockquote >
+<p>
+The primary function of the advisory board is to elect an executive director, advise the executive, as well as review and vote on proposed SEPs.
+</p>
+</blockquote></li>
+
+<li><p>
+The Executive
+</p>
+
+<blockquote >
+<p>
+The role of the executive which is headed by the Executive Director, is to manage the day to day operations of the SunPy organization.
+</p>
+</blockquote></li>
+
+</ol>
+
+</section>
+<section id="slide-orgaa8ccab" data-background="./images/background_1.jpg">
+<h3 id="orgaa8ccab">Board Makeup</h3>
+<p>
+When the board was created in 2014 most of the members of the board where involved in day-to-day development.
+</p>
+
+<p>
+Since then the make up of the board has been selected to bring a wider variety and background of experience to the project, particularly from groups in solar physics who are less represented in the developer community.
+</p>
+
+
+</section>
+<section id="slide-org8e386b4" data-background="./images/background_1.jpg">
+<h3 id="org8e386b4">Changes</h3>
+<p>
+The noteworthy changes to the governance documents for the project since they were written have been:
+</p>
+
+<ul>
+<li>Added the recommendation that the Executive Director picks a deputy (2018).</li>
+<li>Moved control of the financial matters from the board to the executive.</li>
+
+</ul>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org4fb4b80" data-background="./images/background_1.jpg">
+<h2 id="org4fb4b80">Objectives of Changing the Governance</h2>
+<p>
+This session is a forum for us to discuss (and hopefully decide on) what we want out of how the project is run, and the practical implementation of that.
+</p>
+
+<p>
+Things I have thought of:
+</p>
+
+<ul>
+<li>The project should be "run for the community <span class="underline">by</span> the community".</li>
+<li>Developers should feel involved in governance, it should not be "someone else" running the project.</li>
+<li>Simplicity: Minimise bureaucracy. The process of running the project shouldn't take more time than required.</li>
+
+</ul>
+
+<p>
+Anything else?
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org6713b24" data-background="./images/background_1.jpg">
+<h2 id="org6713b24">Proposed Structure</h2>
+<p>
+This is heavily inspired by Astropy's APE 0.
+</p>
+
+<ul>
+<li>"Project Members" are trusted community members who manage the project for the community.</li>
+<li>"The Executive" becomes an elected committee who have authority to make decisions and run the project.</li>
+<li>"The Advisory Board" have no "hard" power, but run any elections and meet regularly with the committee to advise on how best to grow the project.</li>
+
+</ul>
+
+</section>
+<section id="slide-org5bf8dd9" data-background="./images/background_1.jpg">
+<h3 id="org5bf8dd9">An Aside on Complexity</h3>
+<p>
+In the process of thinking about this I have really struggled with the balance of complexity vs formality.
+</p>
+
+<p>
+When writing governance documentation you want them to be resistant to malicious actors, and to no have many "grey areas".
+</p>
+
+<p>
+This leads to formality and complexity, which I really want to avoid; we should consider this trade off in the discussions.
+</p>
+
+</section>
+<section id="slide-orgb329c46" data-background="./images/background_1.jpg">
+<h3 id="orgb329c46">"Project Members"</h3>
+<p>
+These people are the voting franchise for all SunPy elections, they have demonstrated significant participation in the community.
+The project members can approve the addition of new project members.
+</p>
+
+
+<p>
+<b>Decision</b>: We would need to decide both an initial criteria and an ongoing criteria.
+</p>
+
+<p>
+<b>Decision</b>: We would need to decide on a process for adding new project members.
+</p>
+
+</section>
+<section id="slide-org673f2c8" data-background="./images/background_1.jpg">
+<h4 id="org673f2c8">Astropy's criteria</h4>
+<p>
+Voting Members of the Astropy Project must demonstrate all of the following:
+</p>
+
+<ul>
+<li>A good grasp of the philosophy of the Astropy Project</li>
+<li>A solid track record of being constructive and helpful</li>
+<li>Significant contributions to the Project's goals, in any form</li>
+<li>A willingness to dedicate time to improving the Project</li>
+<li>A willingness to recruit, train, and nominate new team members</li>
+
+</ul>
+
+</section>
+<section id="slide-org9f824d4" data-background="./images/background_1.jpg">
+<h4 id="org9f824d4">Adding new project members</h4>
+<p>
+There should be a list of criteria for being an active voting member, against which candidates can be judged.
+</p>
+
+<ul>
+<li><p>
+Astropy have a formal vote open to all project members:
+</p>
+
+<blockquote >
+<p>
+To successfully
+gain an appointment as a Voting Member, the nominee must receive at least four
+positive votes, as long as that constitutes a majority of those voting.
+</p>
+</blockquote></li>
+
+<li>yt had a similar system where someone could be proposed and as long as a number of people seconded the nomination the candidate was accepted, done via email.</li>
+
+</ul>
+
+</section>
+<section id="slide-org50d34b8" data-background="./images/background_1.jpg">
+<h4 id="org50d34b8">Removing project members</h4>
+<p>
+You always need a way to remove people in extreme situations :(
+</p>
+
+</section>
+<section id="slide-org4cf771a" data-background="./images/background_1.jpg">
+<h3 id="org4cf771a">The Executive (committee)</h3>
+<p>
+4 or 5 people who share the day-to-day responsibility for running the project.
+</p>
+
+<p>
+Have a broad authority, but answerable to the project members (and the wider community).
+</p>
+
+<p>
+Should seek consensus when making decisions.
+</p>
+
+</section>
+<section id="slide-org39963db" data-background="./images/background_1.jpg">
+<h4 id="org39963db">Electing the committee</h4>
+<p>
+<b>Decision:</b> Should we have elections if there are fewer candidates than seats?
+</p>
+
+</section>
+<section id="slide-orgcce71cf" data-background="./images/background_1.jpg">
+<h4 id="orgcce71cf">Removing the committee</h4>
+<p>
+There should be a mechanism where a recall election can be triggered.
+</p>
+
+</section>
+<section id="slide-org1e211bd" data-background="./images/background_1.jpg">
+<h3 id="org1e211bd">The Board</h3>
+<p>
+The board can remain practically largely unchanged, but with a different set of formal responsibilities.
+</p>
+
+<ul>
+<li>Add the responsibility of managing elections?</li>
+<li>Add the responsibility of being able to trigger a recall election (either at their discretion, or when petitioned by N project members)?</li>
+<li>Serve as a Ombudsman for community to go to if there is a conflict with the executive committee.</li>
+<li>Provide guidance as to the role of the Project in the context of the larger solar physics community</li>
+<li>Ensuring consistent participation of the project in the community (e.g. tutorials at SPD, posters at AGU)</li>
+
+</ul>
+
+<p>
+<b>Decision:</b> There should be a way of recalling the board? How?
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org11956bd" data-background="./images/background_1.jpg">
+<h2 id="org11956bd">Steps Forward</h2>
+<p>
+Taking into account all the notes from this session we need to draft a new version of SEP-0002.
+</p>
+
+<p>
+Hack on this on Friday?
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="./src/reveal.js/dist/reveal.js"></script>
+<script src="./src/reveal.js/plugin/highlight/highlight.js"></script>
+<script src="./src/reveal.js/plugin/notes/notes.js"></script>
+
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+plugins: [RevealHighlight, RevealNotes]
+});
+
+</script>
+</body>
+</html>

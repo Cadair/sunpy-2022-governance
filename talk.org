@@ -9,63 +9,141 @@
 #+OPTIONS: num:nil
 #+REVEAL_EXTRA_CSS: org.css
 
-#+TITLE: SunPy: Python for Solar Physics
+#+TITLE: The Future of SunPy Governance
 #+AUTHOR: Stuart Mumford
 #+REVEAL_TITLE_SLIDE: <h3>%t</h3>
 #+REVEAL_TITLE_SLIDE: <h4>%a</h4>
 #+REVEAL_TITLE_SLIDE: <a href="https://aperio.software"><img style='float: left; width: 30%%; margin-top: 100px; height: 25%%;' src='images/aperio.svg'/></a><a href="https://sunpy.org"><img style='float: right; width: 30%%; margin-top: 100px; height: 25%%; margin-right: 5%%;' src='images/sunpy.svg'/></a>
 
-* Me
+* The Current Governance Structure
 
-#+REVEAL_HTML: <div class='left'>
+SunPy's current governance was codified in 2014, it was written pre-numfocus and with the idea that SunPy might have to become it's own legal entity at somepoint in the future.
 
-Find me online:
+The governance of the project is split into two parts:
 
-- [[http://stuartmumford.uk][stuartmumford.uk]]
-- [[https://matrix.to/#/@cadair:cadair.com][@cadair:cadair.com]] on Matrix
-- [[https://github.com/Cadair][@Cadair]] on GitHub
-- [[https://twitter.com/stuartmumford][@stuartmumford]] on Twitter
+1. The SunPy board
 
-#+REVEAL_HTML: </div>
+  #+BEGIN_QUOTE
+  The primary function of the advisory board is to elect an executive director, advise the executive, as well as review and vote on proposed SEPs.
+  #+END_QUOTE
 
-#+REVEAL_HTML: <div class='right'>
+2. The Executive
 
-#+attr_html: :width 500px
-[[./images/cadair.jpg]]
+   #+BEGIN_QUOTE
+   The role of the executive which is headed by the Executive Director, is to manage the day to day operations of the SunPy organization.
+   #+END_QUOTE
 
-#+REVEAL_HTML: </div>
+** Board Makeup
 
-# Some Maths
-* Maths!
+When the board was created in 2014 most of the members of the board where involved in day-to-day development.
 
-${n! \over k!(n-k)!} = {n \choose k}$
+Since then the make up of the board has been selected to bring a wider variety and background of experience to the project, particularly from groups in solar physics who are less represented in the developer community.
 
-\begin{equation}
-x=\sqrt{b}
-\end{equation}
 
-If $a^2=b$ and \( b=2 \), then the solution must be either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
+** Changes
 
-* Code example with Babel
+The noteworthy changes to the governance documents for the project since they were written have been:
 
-#+begin_src python :session example :exports both
-  msg = "Hello World"
+- Added the recommendation that the Executive Director picks a deputy (2018).
+- Moved control of the financial matters from the board to the executive.
 
-  msg
-#+end_src
 
-#+RESULTS:
-: Hello World
+* Objectives of Changing the Governance
 
-# AIA
-*
-  :PROPERTIES:
-  :reveal_background: ./images/fulldiskmulticolor.jpg
-  :reveal_background_trans: slide
-  :END:
+This session is a forum for us to discuss (and hopefully decide on) what we want out of how the project is run, and the practical implementation of that.
 
-# DKIST
-*
-  :PROPERTIES:
-  :reveal_extra_attr: data-background-video="" data-background-video-loop=true
-  :END:
+Things I have thought of:
+
+- The project should be "run for the community _by_ the community".
+- Developers should feel involved in governance, it should not be "someone else" running the project.
+- Simplicity: Minimise bureaucracy. The process of running the project shouldn't take more time than required.
+
+Anything else?
+
+* Proposed Structure
+
+This is heavily inspired by Astropy's APE 0.
+
+- "Project Members" are trusted community members who manage the project for the community.
+- "The Executive" becomes an elected committee who have authority to make decisions and run the project.
+- "The Advisory Board" have no "hard" power, but run any elections and meet regularly with the committee to advise on how best to grow the project.
+
+** An Aside on Complexity
+
+In the process of thinking about this I have really struggled with the balance of complexity vs formality.
+
+When writing governance documentation you want them to be resistant to malicious actors, and to no have many "grey areas".
+
+This leads to formality and complexity, which I really want to avoid; we should consider this trade off in the discussions.
+
+** "Project Members"
+
+These people are the voting franchise for all SunPy elections, they have demonstrated significant participation in the community.
+The project members can approve the addition of new project members.
+
+
+*Decision*: We would need to decide both an initial criteria and an ongoing criteria.
+
+*Decision*: We would need to decide on a process for adding new project members.
+
+*** Astropy's criteria
+
+Voting Members of the Astropy Project must demonstrate all of the following:
+
+- A good grasp of the philosophy of the Astropy Project
+- A solid track record of being constructive and helpful
+- Significant contributions to the Project's goals, in any form
+- A willingness to dedicate time to improving the Project
+- A willingness to recruit, train, and nominate new team members
+
+*** Adding new project members
+
+There should be a list of criteria for being an active voting member, against which candidates can be judged.
+
+- Astropy have a formal vote open to all project members:
+
+  #+BEGIN_QUOTE
+  To successfully
+  gain an appointment as a Voting Member, the nominee must receive at least four
+  positive votes, as long as that constitutes a majority of those voting.
+  #+END_QUOTE
+
+- yt had a similar system where someone could be proposed and as long as a number of people seconded the nomination the candidate was accepted, done via email.
+
+*** Removing project members
+
+You always need a way to remove people in extreme situations :(
+
+** The Executive (committee)
+
+4 or 5 people who share the day-to-day responsibility for running the project.
+
+Have a broad authority, but answerable to the project members (and the wider community).
+
+Should seek consensus when making decisions.
+
+*** Electing the committee
+
+*Decision:* Should we have elections if there are fewer candidates than seats?
+
+*** Removing the committee
+
+There should be a mechanism where a recall election can be triggered.
+
+** The Board
+
+The board can remain practically largely unchanged, but with a different set of formal responsibilities.
+
+- Add the responsibility of managing elections?
+- Add the responsibility of being able to trigger a recall election (either at their discretion, or when petitioned by N project members)?
+- Serve as a Ombudsman for community to go to if there is a conflict with the executive committee.
+- Provide guidance as to the role of the Project in the context of the larger solar physics community
+- Ensuring consistent participation of the project in the community (e.g. tutorials at SPD, posters at AGU)
+
+*Decision:* There should be a way of recalling the board? How?
+
+* Steps Forward
+
+Taking into account all the notes from this session we need to draft a new version of SEP-0002.
+
+Hack on this on Friday?
